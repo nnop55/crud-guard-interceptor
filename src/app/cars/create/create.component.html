@@ -1,0 +1,43 @@
+<form class="col-md-8 m-auto" #form="ngForm" (ngSubmit)="onFormSubmit(form)">
+    <div class="form-group d-none">
+        <input type="text" name="id" ngModel class="form-control">
+    </div>
+    <div class="form-group">
+        <input type="text" placeholder="markName" name="markName" ngModel class="form-control">
+    </div>
+    <div class="form-group">
+        <input type="text" placeholder="modelName" name="modelName" ngModel class="form-control">
+    </div>
+    <div class="form-group">
+        <input type="date" placeholder="year" name="year" ngModel class="form-control">
+    </div>
+    <div class="form-group">
+        <input type="number" placeholder="price" name="price" ngModel class="form-control">
+    </div>
+    <div class="form-group">
+        <input type="date" name="arrivesIn" ngModel class="form-control">
+    </div>
+    <div class="form-group">
+        <input type="text" placeholder="sellerPhoneNumber" name="sellerPhoneNumber" ngModel class="form-control">
+    </div>
+    <div class="form-group">
+        <input type="text" placeholder="vinCode" name="vinCode" ngModel class="form-control">
+    </div>
+    <div class="form-group">
+        <input type="number" placeholder="mile" name="mile" ngModel class="form-control">
+    </div>
+    <div class="form-group">
+        <input type="text" placeholder="driveTrainTranslation" name="driveTrainTranslation" ngModel
+            class="form-control">
+    </div>
+    <div class="form-group">
+        <input type="text" placeholder="transmissionTranslation" name="transmissionTranslation" ngModel
+            class="form-control">
+    </div>
+    <div class="form-group">
+        <input type="text" placeholder="fuelTypeTranslation" name="fuelTypeTranslation" ngModel class="form-control">
+    </div>
+    <div class="form-group">
+        <button class="btn btn-dark d-block col-md-12">Create</button>
+    </div>
+</form>

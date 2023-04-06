@@ -1,0 +1,16 @@
+<form class="form-group col-md-4" #authForm="ngForm" (ngSubmit)="onAuthFormSubmit(authForm)">
+    <div class="form-group">
+        <input type="text" [ngStyle]="{
+            'border-color':!email.valid ? 'red': ''
+            }" placeholder="Enter email" required="valid" ngModel name="email" #email="ngModel" class="form-control">
+    </div>
+    <div class="form-group">
+        <input type="password" [ngStyle]="{
+        'border-color':!password.valid ? 'red': ''
+        }" placeholder="Enter password" required="valid" ngModel name="password" #password="ngModel"
+            class="form-control">
+    </div>
+    <div class="form-group">
+        <button class="btn btn-dark d-block col-md-12" [disabled]="!authForm.valid">Auth</button>
+    </div>
+</form>
